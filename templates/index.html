@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Github Profile Finder</title>
+</head>
+<body>
+
+    <header>
+        <div class="title">
+            <h2><a href="/">Github Profile Finder</a></h2>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="search">
+            <form method="POST">
+                <label>Enter github username</label>
+                <input type="text" name="username" placeholder="githubuser123">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="error">
+            {% if errorhtml %}
+                <p class="text-danger mt-3">{{ errorhtml }}</p>
+            {% endif %}    
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="credits">
+            made by <span><a href="https://github.com/hamzak51" target="_blank">hamza khan</a></span>
+        </div>
+    </footer>
+
+</body>
+</html>
