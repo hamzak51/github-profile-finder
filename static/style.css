@@ -24,7 +24,7 @@ header{
 @media (width<480px){
     header{
         .title{
-            font-size: 20px;
+            font-size: 16px;
         }
     }
     .credits{
