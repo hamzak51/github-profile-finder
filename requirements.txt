@@ -24,7 +24,6 @@ pandas==2.3.1
 pefile==2023.2.7
 pillow==11.3.0
 platformdirs==4.3.8
-pyinstaller==6.9.0
 pyinstaller-hooks-contrib==2024.7
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
